@@ -7,6 +7,7 @@
  * @return {boolean}
  */
 
+// Brute Force technique (looping to all the array) time taken O(n of square)
 function containsDuplicate(nums) {
     for (let i = 0; i < nums.length - 1; i++) {   // n
         for (let j = i + 1; j < nums.length; j++) { // n
@@ -17,6 +18,15 @@ function containsDuplicate(nums) {
     }
     return false;
 }
+
+// sorting technique and then compare this all
+
+
+
+
+// hashmaps and check if the value is not there in maps
+
+
 
 
 console.log(containsDuplicate([1,2,3,1]))   // true
