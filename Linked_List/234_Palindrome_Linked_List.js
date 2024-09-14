@@ -54,3 +54,8 @@ var isPalindrome = function(head) {
         }
   return true
 };
+
+
+
+// first we have to reach out to middle using slow and fast pointers, when we reach out there we have to reverse it and then we have to compae both values one by one if its all same then it is palindrome. 
+
