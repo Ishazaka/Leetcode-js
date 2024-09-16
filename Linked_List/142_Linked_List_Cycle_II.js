@@ -1,4 +1,3 @@
-
 //142. Linked List Cycle II
 
 
@@ -33,8 +32,6 @@ var detectCycle = function(head) {
 return slow;
 
 };
-
-
 
 // 2nd solution which took 51 ms
 
