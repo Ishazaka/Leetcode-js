@@ -1,24 +1,24 @@
+/**
+ * @param {ListNode} head
+ * @return {boolean}
+ */
 var hasCycle = function(head) {
-    let slowPTR = head;
-   let fastPTR = head;
+     
+    let fast = head;
+let slow = head;
 
-    while(fastPTR && fastPTR.next){
-        slowPTR = slowPTR.next;
-        fastPTR = fastPTR.next.next
+while(fast && fast.next){
+    fast = fast.next.next;
+    slow = slow.next
 
 
-          if(slowPTR == fastPTR){
-        return true
-     }
-    }
+    if(fast== slow) return true
 
-      return false;   
+}
+
+return false
+     
 };
-
-let head = [3,2,0,-4]
-console.log(hasCycle(head))
-
-
 
 // 2nd Solution whcih took more memory and more time , 
 
